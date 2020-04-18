@@ -62,10 +62,11 @@ Plug 'mxw/vim-jsx'
 Plug 'morhetz/gruvbox'
 Plug 'phanviet/vim-monokai-pro'
 Plug 'flazz/vim-colorschemes'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
-colorscheme gruvbox
+colorscheme dracula
 set background=dark
 
 if executable('rg')
@@ -130,9 +131,6 @@ endfun
 
 autocmd BufWritePre * :call TrimWhitespace()
 autocmd FileType javascript,jsx,js,cpp,cxx,h,hpp,c,go :call GoCoc()
-
-let g:coc_node_path = '/usr/bin/node'
-
 
 " auto call prettiert on save of javascript files etc
 " https://superuser.com/questions/1268926/how-to-use-on-save-action-for-file-type-in-vim
