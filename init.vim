@@ -68,10 +68,11 @@ call plug#end()
 
 
 "colorscheme monokai_pro
-"colorscheme dracula
-colorscheme gruvbox
+colorscheme dracula
+"colorscheme gruvbox
 set background=dark
 "hi Normal guibg=NONE ctermbg=NONE
+highlight Pmenu ctermbg=gray guibg=gray
 
 if executable('rg')
     let g:rg_derive_root='true'
