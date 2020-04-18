@@ -66,9 +66,12 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
-colorscheme dracula
-"set background=dark
-hi Normal guibg=NONE ctermbg=NONE
+
+"colorscheme monokai_pro
+"colorscheme dracula
+colorscheme gruvbox
+set background=dark
+"hi Normal guibg=NONE ctermbg=NONE
 
 if executable('rg')
     let g:rg_derive_root='true'
