@@ -1,3 +1,4 @@
+" based on https://github.com/erkrnt/awesome-streamerrc/blob/master/ThePrimeagen/init.vim
 syntax on
 
 set guicursor=
