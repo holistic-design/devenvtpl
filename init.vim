@@ -143,5 +143,14 @@ autocmd FileType javascript,jsx,js,cpp,cxx,h,hpp,c,go :call GoCoc()
 autocmd FileType javascript,jsx,html,js,css autocmd BufWritePre <buffer> :Prettier
 
 
-" nerd tree configuration
+" auto close brackets
+" https://stackoverflow.com/questions/21316727/automatic-closing-brackets-for-vim
+inoremap " ""<left>
+inoremap ' ''<left>
+" let's not do the ( ) <- too many mistakes with it
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
 
